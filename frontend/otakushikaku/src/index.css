@@ -4,6 +4,41 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  margin:0;
+  padding:0;
+}
+
 .font-kanit {
     font-family: 'Kanit', sans-serif;
   }
+
+.backblur {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+
+.custom-checkbox {
+  @apply w-4 h-4;
+  appearance: none;
+  background-color: #3a3a3a20;
+  border: 1px solid #5700AE;
+  border-radius: 50%;
+  margin:0;
+  transition:0.2s;
+}
+
+.custom-checkbox:checked {
+  @apply bg-[#5700AE];
+  transition: 0.2s;
+}
+
+@layer utilities {
+  .backdropblur {
+    @apply backblur;
+  }
+}
+
+

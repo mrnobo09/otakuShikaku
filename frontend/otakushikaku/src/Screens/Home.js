@@ -2,9 +2,6 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 export default function Home(){
     const [data,setData] = useState();
-    const config = {
-
-    }
     useEffect( ()=>{
         const fetchData = async() => {
             try{
