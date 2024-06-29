@@ -2,6 +2,7 @@ from flask import Flask
 from flask_jwt_extended import JWTManager
 from models import db
 from Blueprints.main_routes import main_routes
+from Blueprints.MAL_routes import MAL_routes
 import pymysql 
 pymysql.install_as_MySQLdb()
 
@@ -21,6 +22,7 @@ def create_app():
     jwt = JWTManager(app)
 
     app.register_blueprint(main_routes)
+    app.register_blueprint(MAL_routes)
 
     return app
 
