@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: 'Kouzan';
+  src: url('./Assets/Fonts/KouzanMouhituFontOTF.otf') format('OpenType'),
+}
+
+.font-kanit {
+    font-family: 'Kanit', sans-serif;
+  }
+
+.font-economica{
+  font-family: 'Economica',sans-serif;
+}
+
+.backblur {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+
+.custom-checkbox {
+  @apply w-4 h-4;
+  appearance: none;
+  background-color: #3a3a3a20;
+  border: 1px solid #5700AE;
+  border-radius: 50%;
+  margin:0;
+  transition:0.2s;
+}
+
+.custom-checkbox:checked {
+  @apply bg-[#5700AE];
+  transition: 0.2s;
+}
+
+@layer utilities {
+  .backdropblur {
+    @apply backblur;
+  }
+}
+
+.glow {
+  text-shadow: 20px 20px 20px rgba(99, 7, 191, 0.8),
+    60px 60px  60px rgb(34, 19, 196),
+    80px 80px 80px rgba(60, 6, 255, 0.947)
+    100px 100px 100px rgb(8, 8, 233);
+}
+
+.videoevent{
+  pointer-events: none;
+}
+
+.text-ellipsis-10 {
+  display: -webkit-box;
+  -webkit-line-clamp: 10; /* Change this value to the number of lines you want */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.text-ellipsis-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Change this value to the number of lines you want */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}

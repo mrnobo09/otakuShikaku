@@ -1,0 +1,3 @@
+.venv/
+
+preprocessing/data/similarity_matrix.npy
