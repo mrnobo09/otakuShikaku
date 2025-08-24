@@ -36,14 +36,10 @@ OtakuShikaku is an anime recommendation platform that leverages content-based fi
 ## Tech Stack
 
 ### Frontend
-- **React.js** - Modern UI framework
-- **Redux** - State management with async actions
-- **Responsive CSS** - Mobile-first design approach
+- **React.js** 
 
 ### Backend  
-- **Flask** - Lightweight Python web framework
-- **JWT Authentication** - Secure token-based auth
-- **Content-Based Filtering** - Recommendation algorithm
+- **Flask** 
 
 ### Database
 - **MySQL** - Relational database for user data and anime information
