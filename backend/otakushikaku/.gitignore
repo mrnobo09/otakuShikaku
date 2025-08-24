@@ -1,3 +1,5 @@
 .venv/
-
+.env
+__pycache__/
+*.pyc
 preprocessing/data/similarity_matrix.npy
